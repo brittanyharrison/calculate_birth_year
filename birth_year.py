@@ -23,9 +23,9 @@ elif int(birth_month) == today.month:  # if its the current birth month it check
 else:
     print("Yay I didn't miss your birthday!") # if birth month hasnt passed
 
-# extra
+# extra - NOT DONE
 now = datetime.datetime.now()
 birthday = input("What is your birthday(dd/mm/yyyy)")
-birthday = datetime.datetime.strptime(birthday,"%d/%m/%Y").date()
-print(birthday)
+hours = birthday - now
+print(hours)
 
